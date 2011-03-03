@@ -9,8 +9,10 @@ open Eliom_parameters
 
 (* GENERATION ENDPOINTS ************************************************************)
 
-let preview = new_service [ "preview" ] (string "target") ()
-let generate = new_service [ "generate" ] (string "kind" ** (string "genre" ** (string "color" ** string "size"))) () 
+let preview_indirect = new_service [ "preview"; "indirect" ] (string "target") ()
+let preview_direct = new_service [ "preview"; "direct" ] (string "target") ()
+
+let generate = new_service [ "generate" ] (string "target" ** (string "model" ** (string "genre" ** (string "color" ** string "size")))) () 
 
 (* POLLER **************************************************************************)
 

@@ -1,1 +1,1 @@
-<*.ml>: pkg_threads, pkg_json-wheel, pkg_ocsigen
+<*.ml>: pkg_threads, pkg_json-wheel, pkg_lwt.syntax, pkg_ocsigen, syntax_camlp4o
