@@ -33,8 +33,8 @@ let assemble target model =
 (* GENERATION ENDPOINTS ************************************************************)
 
 let preview_indirect_handler sp target _ = 
-  lwt qr = generate target in 
-  return (Json.result (Params.prefix ^ qr))
+    lwt qr = generate target in 
+    return (Json.result (Params.prefix ^ qr))
 
 let preview_direct_handler sp target _ = 
   lwt qr = generate target in 
