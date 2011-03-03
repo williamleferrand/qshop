@@ -1,0 +1,15 @@
+QSHOP API - 03 02 2011
+
+QShop is an interface with the printfection webservice, generating merchandise through API calls.
+
+(* Generation ****************************************************************)
+
+GET /generate: ?kind ?genre ?color ?size 
+
+returns a json record with a token 
+
+(* Status ********************************************************************)
+
+GET /status: ?token 
+
+returns a json record with a status
