@@ -1,1 +1,3 @@
 QSHOP - a simple engine for printfection sales
+
+update: 10/6/2012 : I'm cleaning my github so I opensourced this code in case it's helpful to any OCaml addict trying to use printfection .. not sure if the api is still the same, though.
